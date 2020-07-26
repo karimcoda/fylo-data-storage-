@@ -1,0 +1,233 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #0c122c;
+}
+
+.font__family {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+.font__family_bold {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.font__lg {
+  font-size: 1.75rem !important;
+}
+
+.font__sm {
+  font-size: 1rem;
+}
+
+.font__color {
+  color: #848794;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex__m-height {
+  min-height: 100vh;
+}
+
+.flex__ju_c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex__atm_c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex__flex_dir {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex .box__left {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 100px;
+  border-radius: 10px;
+  border-top-right-radius: 80px;
+  background-color: #1d2c67;
+}
+
+.flex .box__left .logo {
+  margin-bottom: 20px;
+}
+
+.flex .box__left ul.icon__services {
+  list-style-type: none;
+}
+
+.flex .box__left ul.icon__services li {
+  display: inline-block;
+}
+
+.flex .box__left ul.icon__services li a {
+  display: block;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  background-color: #0c122c;
+}
+
+.flex .box__right {
+  width: 600px;
+  margin-left: 30px;
+  position: relative;
+}
+
+.flex .box__right .content {
+  background-color: #1d2c67;
+  padding: 30px;
+  margin-top: 42px;
+  border-radius: 10px;
+}
+
+.flex .box__right .content p {
+  color: #dddbff;
+}
+
+.flex .box__right .content .box__level {
+  width: 100%;
+  height: 15px;
+  border-radius: 15px;
+  padding: 3px;
+  background-color: #0c122c;
+  margin: 10px 0;
+}
+
+.flex .box__right .content .box__level .level {
+  width: 75%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background: linear-gradient(to right, #ffa399, #ff4d97);
+  border-radius: 15px;
+  padding: 2px;
+  position: relative;
+}
+
+.flex .box__right .content .box__level .level .circle-level {
+  width: 10px;
+  height: 10px;
+  background-color: #dddbff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+}
+
+.flex .box__right .content .data {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex .box__right .content .data span {
+  color: #dddbff;
+}
+
+.flex .box__right .box__data {
+  width: 170px;
+  height: 56px;
+  background-color: #dddbff;
+  position: absolute;
+  top: 0;
+  right: 50px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 5px 25px;
+}
+
+.flex .box__right .box__data::before {
+  content: '';
+  width: 43px;
+  height: 27px;
+  display: block;
+  border-top: 29px solid #dddbff;
+  border-right: 18px solid transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(90deg);
+  position: absolute;
+  bottom: -9px;
+  right: -7px;
+  border-left: 10px solid transparent;
+}
+
+.flex .box__right .box__data span:nth-of-type(1) {
+  margin-right: 5px;
+}
+
+.container {
+  width: 920px;
+  height: 177px;
+}
+
+@media (max-width: 1440px) {
+  .flex__flex_dir {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .container .box__right {
+    margin-left: 0px !important;
+    width: 100% !important;
+  }
+  .container .box__right .box__data {
+    top: 145px;
+    right: 259px;
+  }
+  .container .box__right .box__data::before {
+    display: none;
+  }
+  .container .box__left {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

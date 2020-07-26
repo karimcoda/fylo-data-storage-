@@ -1,0 +1,33 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: $very-dark-blue;
+}
+.font__family{
+    font-family: $font-fy-ral;
+    font-weight: 400;
+}
+.font__family_bold{
+    font-family: $font-fy-ral;
+    font-weight: 700;
+}
+.font__lg{
+    font-size: $font-lg !important;
+}
+.font__sm{
+    font-size: $font-sm;
+}
+
+.font__color{
+    color: $grayish-Blue
+}
